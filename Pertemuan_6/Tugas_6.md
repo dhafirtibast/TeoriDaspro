@@ -55,14 +55,14 @@ Tugas latihan untuk materi Pemilihan.
    
         // Periksa kondisi   
         IF sks >= 12 THEN   
-        PRINT "Akses WiFi diberikan (mahasiswa aktif)"   
+          PRINT "Akses WiFi diberikan (mahasiswa aktif)"   
         ELSE   
-        PRINT "Akses ditolak, SKS kurang dari 12"   
+          PRINT "Akses ditolak, SKS kurang dari 12"   
         END IF   
     
         // Kondisi ketiga  
         ELSE   
-        PRINT "Akses ditolak"   
+          PRINT "Akses ditolak"   
         END IF   
     
     END    
