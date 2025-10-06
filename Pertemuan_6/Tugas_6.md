@@ -35,34 +35,34 @@ Tugas latihan untuk materi Pemilihan.
    
      START   
     
-       // Deklarasi variabel yang akan digunakan   
-       DECLARE status AS STRING   
-       DECLARE sks AS INTEGER   
+        // Deklarasi variabel yang akan digunakan   
+        DECLARE status AS STRING   
+        DECLARE sks AS INTEGER   
    
-       // Meminta input status user   
-       PRINT "Masukkan status Anda (dosen/mahasiswa):"   
-       INPUT status   
+        // Meminta input status user   
+        PRINT "Masukkan status Anda (dosen/mahasiswa):"   
+        INPUT status   
    
-       // Memeriksa status user   
-       // Kondisi pertama: jika status adalah 'dosen'   
-       IF status IS EQUAL TO "dosen" THEN   
+        // Memeriksa status user   
+        // Kondisi pertama  
+        IF status IS EQUAL TO "dosen" THEN   
           PRINT "Akses WiFi diberikan (dosen)"   
    
-          // Kondisi kedua   
-          ELSE IF status IS EQUAL TO "mahasiswa" THEN   
-               PRINT "Masukkan jumlah SKS Anda:"   
-          INPUT sks   
+        // Kondisi kedua   
+        ELSE IF status IS EQUAL TO "mahasiswa" THEN   
+            PRINT "Masukkan jumlah SKS Anda:"   
+        INPUT sks   
    
-       // Periksa kondisi   
-       IF sks >= 12 THEN   
-       PRINT "Akses WiFi diberikan (mahasiswa aktif)"   
-       ELSE   
-       PRINT "Akses ditolak, SKS kurang dari 12"   
-     END IF   
+        // Periksa kondisi   
+        IF sks >= 12 THEN   
+        PRINT "Akses WiFi diberikan (mahasiswa aktif)"   
+        ELSE   
+        PRINT "Akses ditolak, SKS kurang dari 12"   
+        END IF   
     
-    // Kondisi ketiga  
-    ELSE   
-    PRINT "Akses ditolak"   
-    END IF   
+        // Kondisi ketiga  
+        ELSE   
+        PRINT "Akses ditolak"   
+        END IF   
     
     END    
