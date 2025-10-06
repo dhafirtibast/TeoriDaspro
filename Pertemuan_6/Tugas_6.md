@@ -29,7 +29,7 @@ Tugas latihan untuk materi Pemilihan.
 ## 2. Flowchart dan Pseudocode Sistem Akses WiFi    
 2.1. Flowchart   
 
-   ![Flowchart 2](Pertemuan_6/Screenshot 2025-10-06 234053.png "Flowchart Sistem Akses WiFi)
+   ![Flowchart 2](https://github.com/dhafirtibast/TeoriDaspro/blob/main/Pertemuan_6/Screenshot%202025-10-06%20234053.png "Flowchart Sistem Akses WiFi")
 
 2.2. Pseudocode
    
