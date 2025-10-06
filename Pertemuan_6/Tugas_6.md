@@ -7,26 +7,24 @@ Tugas latihan untuk materi Pemilihan.
     
 1.2. Pseudocode
    
-START   
+     START   
    
-  // Deklarasi variabel   
-  DECLARE bawa_kartu AS BOOLEAN   
-  DECLARE registrasi_online AS BOOLEAN   
+       // Deklarasi variabel   
+       DECLARE bawa_kartu AS BOOLEAN   
+       DECLARE registrasi_online AS BOOLEAN   
    
-  // menerima input    
-  INPUT "Apakah Anda membawa kartu mahasiswa? (true/false)": bawa_kartu    
-  INPUT "Apakah Anda sudah registrasi online? (true/false)": registrasi_online   
+       // menerima input    
+       INPUT "Apakah Anda membawa kartu mahasiswa? (true/false)": bawa_kartu    
+       INPUT "Apakah Anda sudah registrasi online? (true/false)": registrasi_online   
    
-  // kondisi   
-  IF bawa_kartu IS TRUE OR registrasi_online IS TRUE THEN    
-    // Jika salah satu atau kedua syarat terpenuhi   
-    PRINT "akses diberikan, silakan masuk."   
-  ELSE   
-    // Jika kedua syarat tidak terpenuhi   
-    PRINT "Akses tidak diberikan."   
-  ENDIF   
+       // kondisi   
+       IF bawa_kartu IS TRUE OR registrasi_online IS TRUE THEN    
+         PRINT "akses diberikan, silakan masuk."   
+       ELSE     
+         PRINT "Akses tidak diberikan."   
+       ENDIF   
    
-END      
+     END         
 
 ## 2. Flowchart dan Pseudocode Sistem Akses WiFi    
 2.1. Flowchart   
@@ -34,38 +32,37 @@ END
    <img width="742" height="859" alt="Screenshot 2025-10-06 234053" src="https://github.com/user-attachments/assets/1006e61c-e900-4156-a1cb-421ade1f5cea" />
 
 2.2. Pseudocode
-
-START   
+   
+     START   
     
-  // Deklarasi variabel yang akan digunakan   
-  DECLARE status AS STRING   
-  DECLARE sks AS INTEGER   
+       // Deklarasi variabel yang akan digunakan   
+       DECLARE status AS STRING   
+       DECLARE sks AS INTEGER   
    
-  // Meminta input status user   
-  PRINT "Masukkan status Anda (dosen/mahasiswa):"   
-  INPUT status   
+       // Meminta input status user   
+       PRINT "Masukkan status Anda (dosen/mahasiswa):"   
+       INPUT status   
    
-  // Memeriksa status user   
-  // Kondisi pertama: jika status adalah 'dosen'   
-  IF status IS EQUAL TO "dosen" THEN   
-    PRINT "Akses WiFi diberikan (dosen)"   
+       // Memeriksa status user   
+       // Kondisi pertama: jika status adalah 'dosen'   
+       IF status IS EQUAL TO "dosen" THEN   
+          PRINT "Akses WiFi diberikan (dosen)"   
    
-  // Kondisi kedua   
-  ELSE IF status IS EQUAL TO "mahasiswa" THEN   
-    // Jika mahasiswa, input jumlah SKS   
-    PRINT "Masukkan jumlah SKS Anda:"   
-    INPUT sks   
+          // Kondisi kedua   
+          ELSE IF status IS EQUAL TO "mahasiswa" THEN   
+               PRINT "Masukkan jumlah SKS Anda:"   
+          INPUT sks   
    
-    // Periksa kondisi   
-    IF sks >= 12 THEN   
-      PRINT "Akses WiFi diberikan (mahasiswa aktif)"   
+       // Periksa kondisi   
+       IF sks >= 12 THEN   
+       PRINT "Akses WiFi diberikan (mahasiswa aktif)"   
+       ELSE   
+       PRINT "Akses ditolak, SKS kurang dari 12"   
+     END IF   
+    
+    // Kondisi ketiga  
     ELSE   
-      PRINT "Akses ditolak, SKS kurang dari 12"   
-    END IF   
-   
-  // Kondisi ketiga   
-  ELSE   
     PRINT "Akses ditolak"   
-  END IF   
-
-END    
+    END IF   
+    
+    END    
