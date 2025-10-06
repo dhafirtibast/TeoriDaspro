@@ -28,7 +28,7 @@ START
    
 END      
 
-## 2. Flowchart dan Pseudocode    
+## 2. Flowchart dan Pseudocode Sistem Akses WiFi    
 2.1. Flowchart   
 
    <img width="742" height="859" alt="Screenshot 2025-10-06 234053" src="https://github.com/user-attachments/assets/1006e61c-e900-4156-a1cb-421ade1f5cea" />
