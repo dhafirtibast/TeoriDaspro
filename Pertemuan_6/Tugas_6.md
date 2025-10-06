@@ -24,4 +24,25 @@ START
   ENDIF   
    
 END   
+   
+   START
+
+  // Deklarasi variabel untuk menampung status syarat
+  DECLARE bawa_kartu AS BOOLEAN
+  DECLARE registrasi_online AS BOOLEAN
+
+  // Menerima input status dari mahasiswa
+  INPUT "Apakah Anda membawa kartu mahasiswa? (true/false)": bawa_kartu
+  INPUT "Apakah Anda sudah registrasi online? (true/false)": registrasi_online
+
+  // Pengecekan kondisi dengan logika OR
+  IF bawa_kartu IS TRUE OR registrasi_online IS TRUE THEN
+    // Jika salah satu atau kedua syarat terpenuhi
+    PRINT "Boleh masuk."
+  ELSE
+    // Jika kedua syarat tidak terpenuhi
+    PRINT "Ditolak masuk."
+  ENDIF
+
+END
 
