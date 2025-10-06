@@ -26,4 +26,46 @@ START
     PRINT "Akses tidak diberikan."   
   ENDIF   
    
-END   
+END      
+
+## 2. Flowchart dan Pseudocode    
+2.1. Flowchart   
+
+   <img width="742" height="859" alt="Screenshot 2025-10-06 234053" src="https://github.com/user-attachments/assets/1006e61c-e900-4156-a1cb-421ade1f5cea" />
+
+2.2. Pseudocode
+
+START   
+    
+  // Deklarasi variabel yang akan digunakan   
+  DECLARE status AS STRING   
+  DECLARE sks AS INTEGER   
+   
+  // Meminta input status user   
+  PRINT "Masukkan status Anda (dosen/mahasiswa):"   
+  INPUT status   
+   
+  // Memeriksa status user   
+  // Kondisi pertama: jika status adalah 'dosen'   
+  IF status IS EQUAL TO "dosen" THEN   
+    PRINT "Akses WiFi diberikan (dosen)"   
+   
+  // Kondisi kedua   
+  ELSE IF status IS EQUAL TO "mahasiswa" THEN   
+    // Jika mahasiswa, input jumlah SKS   
+    PRINT "Masukkan jumlah SKS Anda:"   
+    INPUT sks   
+   
+    // Periksa kondisi   
+    IF sks >= 12 THEN   
+      PRINT "Akses WiFi diberikan (mahasiswa aktif)"   
+    ELSE   
+      PRINT "Akses ditolak, SKS kurang dari 12"   
+    END IF   
+   
+  // Kondisi ketiga   
+  ELSE   
+    PRINT "Akses ditolak"   
+  END IF   
+
+END    
